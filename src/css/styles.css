@@ -342,6 +342,15 @@ footer {
 
 /* For smaller screens */
 @media only screen and (max-width: 768px) {
+    h1{
+        font-size: 3.5rem;
+    }
+    h2{
+        font-size: 23px;
+    }
+    p{
+        font-size: 15px;
+    }
     .nav-links {
         flex-direction: column; /* Stack navigation links vertically */
     }
@@ -352,7 +361,7 @@ footer {
     }
 
     .project-box {
-        width: 100%; /* Adjust project box width to fit smaller screens */
+        
         margin-bottom: 20px; /* Add bottom margin for spacing between project boxes */
     }
     
@@ -365,7 +374,7 @@ footer {
     }
 
     .about-me img {
-        width: 100%; /* Make the image fill the container */
+        width: 80%; /* Make the image fill the container */
         margin-left: 0; /* Remove left margin */
         margin-bottom: 20px; /* Add bottom margin for spacing */
     }
