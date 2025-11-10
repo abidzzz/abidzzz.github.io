@@ -206,7 +206,6 @@ footer {
 
     display: block;
 }
-
 .tech-stack .icons {
     display: grid;
     grid-template-columns: repeat(4, 1fr); /* Adjust the number of columns as needed */
@@ -216,11 +215,12 @@ footer {
 .tech-stack .icons img {
     width: 100px; /* Adjust the size of the icons as needed */
     filter: grayscale(100%); /* Apply grayscale filter to make icons gray */
-    transition: filter 0.3s ease; /* Add transition effect */
+    transition: filter 0.3s ease, transform 0.3s ease; /* Add transition effect for both filter and transform */
 }
 
 .tech-stack .icons img:hover {
     filter: none; /* Remove grayscale filter on hover */
+    transform: scale(1.1); /* Make the icon "pop up" by increasing its size */
 }
 
 .tech-stack .icon {
