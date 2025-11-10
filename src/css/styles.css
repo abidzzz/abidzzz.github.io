@@ -284,7 +284,14 @@ footer {
     flex-direction: column;
     justify-content: space-between;
     height: 100%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effect */
 }
+
+.project-box:hover {
+    transform: translateY(-10px) scale(1.05); /* Slightly lifts and scales the box */
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2); /* Stronger shadow for pop-up effect */
+}
+
 .project-header {
     display: flex;
     align-items: center;
@@ -316,7 +323,11 @@ footer {
 
 .project-box a:hover {
     background-color: #005fa3; /* Darker shade of GitHub blue color */
+    transform: scale(1.1); /* Slight scaling effect for the link */
+    transition: transform 0.2s ease;
 }
+
+
 
 .tag {
     display: inline-block;
@@ -338,7 +349,10 @@ footer {
 .tag:hover {
     background-color: #1e7af2;
     color: #ffffff;
+    transform: scale(1.05); /* Slightly grow the tag on hover */
+    transition: transform 0.2s ease;
 }
+
 
 /* For smaller screens */
 @media only screen and (max-width: 768px) {
